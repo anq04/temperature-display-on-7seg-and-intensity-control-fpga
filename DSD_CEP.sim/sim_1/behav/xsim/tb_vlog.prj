@@ -1,0 +1,14 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../DSD_CEP.srcs/sources_1/new/clk.v" \
+"../../../../DSD_CEP.srcs/sources_1/new/i2c.v" \
+"../../../../DSD_CEP.srcs/sources_1/new/pwm.v" \
+"../../../../DSD_CEP.srcs/sources_1/new/seven_seg.v" \
+"../../../../DSD_CEP.srcs/sources_1/new/top.v" \
+"../../../../DSD_CEP.srcs/sim_1/new/tb.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort
